@@ -1,0 +1,22 @@
+{
+  "name": "uidx-toledo",
+  "version": "1.0.0",
+  "description": "uidx-toledo a vanilla javascript ui library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifjtoledo/uidx.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "Jorge Toledo Toledo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifjtoledo/uidx/issues"
+  },
+  "homepage": "https://github.com/ifjtoledo/uidx#readme"
+}
