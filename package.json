@@ -1,6 +1,6 @@
 {
   "name": "uidx-toledo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "uidx-toledo a vanilla javascript ui library",
   "main": "index.js",
   "scripts": {
