@@ -1,22 +1,32 @@
 {
   "name": "uidx-toledo",
   "version": "1.0.1",
-  "description": "uidx-toledo a vanilla javascript ui library",
-  "main": "index.js",
+  "description": "uidx-toledo a vanilla typescript ui library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ifjtoledo/uidx.git"
   },
   "keywords": [
-    "ui"
+    "modal",
+    "typescript",
+    "uidx"
   ],
   "author": "Jorge Toledo Toledo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ifjtoledo/uidx/issues"
   },
-  "homepage": "https://github.com/ifjtoledo/uidx#readme"
+  "homepage": "https://github.com/ifjtoledo/uidx#readme",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
 }
