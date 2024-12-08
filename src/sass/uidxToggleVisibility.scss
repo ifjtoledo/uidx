@@ -1,0 +1,90 @@
+@use '../../zzzcustom/utilities/initial-variables' as initv;
+
+/* Remove display: none; from the base classes */
+.uidxParentToggleVisibility,
+.uidxChildToggleVisibilityWrapper {
+    /* Initial hidden state */
+    opacity: 0;
+    position: absolute;
+    /* Remove display: none; */
+    // --uidx-default-animation-duration: var(--uidx-default-animation-duration, 300ms);
+    // --uidx-default-timing-function: var(--uidx-default-timing-function, ease);
+}
+
+/* Fondo del ToggleVisibility */
+// .uidxParentToggleVisibility {
+//     transition: opacity var(--uidx-default-animation-duration) var(--uidx-default-timing-function),
+//         transform var(--uidx-default-animation-duration) var(--uidx-default-timing-function);
+// }
+
+// .uidxChildToggleVisibilityWrapper {
+//     transition: opacity var(--uidx-default-animation-duration) var(--uidx-default-timing-function),
+//         transform var(--uidx-default-animation-duration) var(--uidx-default-timing-function);
+// }
+
+// dummy content
+.uidxDummyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header-title {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.delete {
+    background: none;
+    border: none;
+    font-size: 1.25em;
+    cursor: pointer;
+    color: #333;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.content {
+    font-size: 1em;
+    color: #333;
+}
+
+.card-image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imagepokemon {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #666;
+}

@@ -1,0 +1,57 @@
+:root {
+    --uidx-default-animation-duration: 250ms;
+    --uidx-default-timing-function: ease-in-out;
+    --uidx-default-animation-duration-alert-modal: 150ms;
+    --uidx-default-timing-function-alert-modal: ease-in-out;
+}
+
+.uidx-visible-opacity {
+    opacity: 1;
+    position: static;
+}
+
+.uidx-hidden-opacity {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.uidx-hidden-position {
+    position: absolute;
+}
+
+.uidx-opacity-animation {
+    transition: opacity var(--uidx-default-animation-duration, 300ms) var(--uidx-default-timing-function, ease),
+        visibility 0s linear 0s,
+        position 0s linear 0s;
+}
+
+/* Clases de animación personalizadas */
+.custom-animation {
+    --uidx-default-animation-duration: 600ms;
+    --uidx-default-timing-function: ease-in;
+    transition: opacity var(--uidx-default-animation-duration) var(--uidx-default-timing-function),
+        visibility 0s linear 0s,
+        position 0s linear 0s;
+}
+
+.custom-animation.custom-hidden-position {
+    transition: opacity var(--uidx-default-animation-duration) var(--uidx-default-timing-function),
+        visibility 0s linear var(--uidx-default-animation-duration),
+        position 0s linear var(--uidx-default-animation-duration);
+}
+
+.uidx-no-layout {
+    position: absolute;
+    z-index: 1000;
+    /* Asegurar que el elemento esté sobre otros elementos */
+}
+
+.uidxSelfCloseOutsideClick {
+    position: relative;
+}
+
+.uidxSelfCloseOutsideClick .bulma-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
